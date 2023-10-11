@@ -2,10 +2,10 @@ import { StyleSheet } from 'react-native';
 
 import { Text, View } from '../../components/Themed';
 
-export default function TabOneScreen() {
+export default function TabBoostedCreaturesScreen() {
 	return (
 		<View style={styles.container}>
-			<Text style={styles.title}>Tibia News</Text>
+			<Text style={styles.title}>Boosted Creatures of today</Text>
 		</View>
 	);
 }
