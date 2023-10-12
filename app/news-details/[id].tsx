@@ -1,14 +1,14 @@
+import { useLocalSearchParams } from 'expo-router';
 import { StyleSheet } from 'react-native';
-
-import NewsList from '../../components/NewsList';
 import { Text, View } from '../../components/Themed';
 
-export default function Home() {
+export default function NewsDetaiils({}) {
+	const local = useLocalSearchParams();
+	console.log(local.id);
+
 	return (
 		<View style={styles.container}>
-			<Text style={styles.title}>Tibia News</Text>
-
-			<NewsList />
+			<Text>Hello</Text>
 		</View>
 	);
 }
@@ -17,10 +17,5 @@ const styles = StyleSheet.create({
 	container: {
 		flex: 1,
 		alignItems: 'center'
-	},
-	title: {
-		fontSize: 20,
-		fontWeight: 'bold',
-		marginTop: 16
 	}
 });
